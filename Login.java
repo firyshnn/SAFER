@@ -11,10 +11,12 @@ public class Login {
     System.out.print("Enter password: ");
     password = sc.nextLine();
 
-    while (!password.equals("SAFERuser")){
-      System.out.println("Incorrect password, please try again");
-      System.out.print("Enter password: ");
-      password = sc.nextLine();
+    while (!username.equals("SAFERuser") || !password.equals("SAFERuser01")){
+      System.out.println("Incorrect username or password, please try again");
+      System.out.print("Enter username: ");
+    username = sc.nextLine();
+    System.out.print("Enter password: ");
+    password = sc.nextLine();
     }
   }
 }
