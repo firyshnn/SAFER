@@ -1,19 +1,20 @@
-import java.util.Scannner;
+import java.util.Scanner;
 
 public class Login {
   public static void main (String [] args){
     Scanner sc = new Scanner (System.in);
     String username;
-    String password;
+    int password;
 
-    System.out.println("Enter username: ");
+    System.out.print("Enter username: ");
     username = sc.nextLine();
-    System.out.println("Enter password: ");
-    password = sc.nextLine();
+    System.out.print("Enter password: ");
+    password = sc.nextInt();
 
-    while (password != "12345678"){
-      System.println("Incorrect password, please try again");
-      password = sc.nextLine();
+    while (password != 12345678){
+      System.out.print("Incorrect password, please try again");
+      System.out.print("Enter password: ");
+      password = sc.nextInt();
     }
   }
 }
